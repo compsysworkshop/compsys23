@@ -1,0 +1,5 @@
+theme: jekyll-theme-minimal
+title: "COMPSYS '23"
+show_downloads: false
+description: "Workshop on Composable Systems"
+logo: assets/img/compsys_logo.png
