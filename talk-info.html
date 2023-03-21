@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+
+  <head>
+    <title>COMPSYS 2023</title>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/frame.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="css/controls.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="css/custom.css" media="screen" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/menu.js"></script>
+    <style>
+.menu-program {
+  color: rgb(255, 255, 255) !important;
+  opacity: 1 !important;
+  font-weight: 700 !important;
+}
+    </style>
+  </head>
+
+  <body>
+    <div class="menu-container"></div>
+    <div class="site-blocks-cover overlay inner-page-cover" style="background-image: url('img/banner.jpg');"
+                                                            data-stellar-background-ratio="0.5">
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-md-10 text-center" data-aos="fade-up">
+            <h1>2nd Workshop on Composable Systems</h1>
+            <h2>Co-located with IPDPS 2023</h2>
+            <h2>St. Petersburg, Florida USA</h2>
+            <h2>May 15-19 2023</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Start page content-->
+    <div class="content-container">
+      <div class="content">
+        <div class="content-table flex-column">
+          <div class="flex-row">
+            <div class="flex-item flex-column">
+              <h2 class="add-top-margin">Program Information</h2>
+            </div>
+          </div>
+          <div class="flex-row">
+            <div class="flex-item flex-column">
+              <h4>Keynotes</h4>
+
+              <hr/>
+
+              <p id="keynote_1"><span style="font-weight: bold;">Breaking out of the physical: Composable infrastructure of the software defined server</span><br/><span style="font-style: italic;">Scott Houppermans</span> (Liqid, Inc.)</p>
+
+              <p>The datacenter has evolved through time from individual servers, to virtualized clusters, to converged, and to hyperconverged systems. Liqid brings true composable infrastructure. The next evolution of your datacenter with cloud-like flexibility for your increasing expensive and power-hungry GPUs and other devices that modern applications and workloads rely upon.</p>
+
+              <p>Removing these devices from the server and placing them onto the Liqid PCIe fabric, we create the true software-defined bare metal server; endlessly reconfigurable to meet any demand on the fly. Ever flexible to each use case and application, composable infrastructure provides the hardware that is needed, at the time it is needed, for as long as it’s needed to meet the goals of the Enterprise, researcher, or business mission.</p>
+
+              <p>Slash your infrastructure Cap-Ex and Op-Ex costs year over year through reducing server footprint, electrical consumption, and cooling by more fully utilizing these devices; delivering on capability and a more sustainable datacenter.</p>
+
+              <p style="font-weight: bold;">Bio</p>
+
+              <p>Senior Solutions Architect for Liqid’s Federal and Enterprise customers. Bringing over 20 years’ experience from U.S. Marine Corps and U.S. Navy Enterprise Networks Network Operations Center and Systems Engineering support to the across a wide range of capabilities; from Exchange email administration, SAN Storage engineering, NOC Incident Management Service Restoration, and program level engineering for the Marine Corps Logistics System Disconnected Operations.</p>
+
+              <hr/> 
+
+              <p id="keynote_2"><span style="font-weight: bold">Memory Pooling over CXL and Go Beyond</span><br/><span style="font-style: italic;">Myoungsoo Jung</span> (KAIST)</p>
+
+              <p>In this talk, I will provide a comprehensive overview of Compute Express Link (CXL) technology, examining why it matters and where we currently stand in terms of its development. CXL is a high-speed, low-latency interconnect standard that allows for communication between CPUs and various types of accelerators, including FPGAs and GPUs. It enables devices to share memory space and cache coherence, allowing for faster data access and more efficient processing of complex workloads. We will explore the different versions of CXL, starting with the original CXL 1.0 specification and its subsequent updates, including the recently released CXL 3.0. I will discuss the key features of each version and how they differ from one another, as well as the benefits of using CXL over other interconnect standards.</p>
+
+              <p>In addition to examining the technical aspects of CXL, I will also delve into the real-world implications of this technology. Specifically, I will discuss how CXL is being used in large-scale data centers and how it is helping to drive innovation in fields such as artificial intelligence and machine learning. Overall, this talk will provide a comprehensive understanding of CXL technology, from its foundational principles to its practical applications. Whether you're a hardware engineer, a software developer, or simply interested in the latest trends in computing, this talk will offer valuable insights into one of the most exciting new technologies on the market today.</p>
+
+              <p style="font-weight: bold;">Bio</p>
+
+              <p>Dr. Myoungsoo Jung is an Associate Professor (Tenured) at KAIST and the lead of CAMEL (http://camelab.org). He is also the CEO and Founder of Panmnesia, a KAIST’s start-up (https://panmnesia.com/). Dr. Jung earned his Ph.D. in Computer Science at Pennsylvania State University, his M.S. in Computer Science from Georgia Institute of Technology, and an M.S. in Embedded Systems from Korea University in Seoul. Dr. Jung has many years of industry experience, several industrial U.S. patents related to multi-channel SSDs, and more than a hundred research papers regarding SSD flash firmware and kernel-level file systems (mainly published OSDI, ISCA, MICRO, ASPLOS, FAST, and HPCA). He received core grant awards from the National Science Foundation (NSF), Department of Energy (DOE), National Research Foundation (NRF). He achieved the Lawrence Berkeley National Laboratory Award (LBNL) of Excellence, NVMW Memorable Paper Award (2022), and Samsung Best Paper Award (2022). His current research interests include cache coherent interconnect (e.g., CXL), coprocessor architecture, FPGA-based accelerators, advanced computer architecture, and operating systems on emerging non-volatile memory and solid-state drive technologies.</p>
+
+              <h4>Invited Talks</h4>
+
+              <hr/>
+
+              <p id="invited_talk_1"><span style="font-weight: bold;">Centralized Composable HPC Management with the OpenFabrics Managment Framework</span><br/><span style="font-style: italic;">Michael Aguilar</span> (Sandia National Labs)</p>
+
+              <p>Traditional HPC systems are provisioned with static fixed quantities of memory, storage, accelerators, and CPU resources to execute requested computation. This is not sufficient for today’s datacenters that are running modern dynamic workloads, resulting in workloads executing on systems that are not optimized for their needs. Workloads may require hardware resources, e.g. GPUs, that are present in the datacenter but not on the server on which the workload is executing. Conversely, compute resources on a given server may be underutilized because they are not required by the workload running on that server. Thus, datacenters often end up overprovisioning hardware resources to attempt enabling any workload to run on any server.</p>
+
+              <p>Composable Disaggregated Infrastructure (CDI) enables servers to be dynamically composed out of hardware resources physically disaggregated in the datacenter, and as needed by a given workload. Centralized resource management can potentially mitigate, out-of-memory conditions, IO thrashing, stranding of available resources, such as, CPUs, GPUs, and memories, and provide dynamic network fail-over. Resource Management, using a standardized interface, can enable clients to monitor, compose, and intelligently provision resources, in beneficial ways.</p>
+
+              <p>The OpenFabrics Alliance in collaboration with the DMTF, SNIA, and the CXL Consortium, is developing an OpenFabrics Management Framework (OFMF) and a hardware Composability Manager. The OFMF is a open-source Resource Manager is designed for configuring fabric interconnects and managing composable disaggregated resources in dynamic HPC infrastructures using client-friendly abstractions. The goal of the OFMF is to enable interoperability through common interfaces to enable client Managers to efficiently connect workloads with resources in a complex heterogenous ecosystem, without having to worry about the underlying network technology.</p>
+
+              <hr/>
+
+              <p id="invited_talk_2"><span style="font-weight: bold;">Towards ML-driven resource orchestration in disaggregated memory systems: challenges and opportunities</span><br/><span style="font-style: italic;">Dimosthenis Masouros</span> (NTUA, Greece)</p>
+
+              <p>The fixed resource capacity of modern Cloud servers poses several challenges regarding the efficient orchestration of computing resources. To alleviate this resource wall challenge, hardware (memory) disaggregation has been proposed as a new design paradigm, where the underlying infrastructure is organized as a pool of heterogeneous resources that can be composed on demand into compute units tailored to workload-specific requirements. However, even though hardware disaggregation offers more fine-grained organization of computing resources, it also introduces new optimization knobs, which have to be properly managed to truly exploit its benefits. ML-driven resource orchestration is a key player in this direction, however, questions like "where", "when" and "how" to use ML for resource orchestration of disaggregated systems are still vague. This talk highlights some of the key research questions and open problems in this area, gives examples of recent research that demonstrate the potential of ML-driven resource orchestration, and provides insights into the exciting new opportunities that ML presents for the future of disaggregated memory systems.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+</html>
