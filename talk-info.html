@@ -49,7 +49,7 @@
           </div>
           <div class="flex-row">
             <div class="flex-item flex-column">
-              <h4>Keynotes</h4>
+              <h4>Keynote</h4>
 
               <hr/>
 
@@ -64,18 +64,6 @@
               <p style="font-weight: bold;">Bio</p>
 
               <p>Senior Solutions Architect for Liqid’s Federal and Enterprise customers. Bringing over 20 years’ experience from U.S. Marine Corps and U.S. Navy Enterprise Networks Network Operations Center and Systems Engineering support to the across a wide range of capabilities; from Exchange email administration, SAN Storage engineering, NOC Incident Management Service Restoration, and program level engineering for the Marine Corps Logistics System Disconnected Operations.</p>
-
-              <hr/> 
-
-              <p id="keynote_2"><span style="font-weight: bold">Memory Pooling over CXL and Go Beyond</span><br/><span style="font-style: italic;">Myoungsoo Jung</span> (KAIST)</p>
-
-              <p>In this talk, I will provide a comprehensive overview of Compute Express Link (CXL) technology, examining why it matters and where we currently stand in terms of its development. CXL is a high-speed, low-latency interconnect standard that allows for communication between CPUs and various types of accelerators, including FPGAs and GPUs. It enables devices to share memory space and cache coherence, allowing for faster data access and more efficient processing of complex workloads. We will explore the different versions of CXL, starting with the original CXL 1.0 specification and its subsequent updates, including the recently released CXL 3.0. I will discuss the key features of each version and how they differ from one another, as well as the benefits of using CXL over other interconnect standards.</p>
-
-              <p>In addition to examining the technical aspects of CXL, I will also delve into the real-world implications of this technology. Specifically, I will discuss how CXL is being used in large-scale data centers and how it is helping to drive innovation in fields such as artificial intelligence and machine learning. Overall, this talk will provide a comprehensive understanding of CXL technology, from its foundational principles to its practical applications. Whether you're a hardware engineer, a software developer, or simply interested in the latest trends in computing, this talk will offer valuable insights into one of the most exciting new technologies on the market today.</p>
-
-              <p style="font-weight: bold;">Bio</p>
-
-              <p>Dr. Myoungsoo Jung is an Associate Professor (Tenured) at KAIST and the lead of CAMEL (http://camelab.org). He is also the CEO and Founder of Panmnesia, a KAIST’s start-up (https://panmnesia.com/). Dr. Jung earned his Ph.D. in Computer Science at Pennsylvania State University, his M.S. in Computer Science from Georgia Institute of Technology, and an M.S. in Embedded Systems from Korea University in Seoul. Dr. Jung has many years of industry experience, several industrial U.S. patents related to multi-channel SSDs, and more than a hundred research papers regarding SSD flash firmware and kernel-level file systems (mainly published OSDI, ISCA, MICRO, ASPLOS, FAST, and HPCA). He received core grant awards from the National Science Foundation (NSF), Department of Energy (DOE), National Research Foundation (NRF). He achieved the Lawrence Berkeley National Laboratory Award (LBNL) of Excellence, NVMW Memorable Paper Award (2022), and Samsung Best Paper Award (2022). His current research interests include cache coherent interconnect (e.g., CXL), coprocessor architecture, FPGA-based accelerators, advanced computer architecture, and operating systems on emerging non-volatile memory and solid-state drive technologies.</p>
 
               <h4>Invited Talks</h4>
 
@@ -94,6 +82,12 @@
               <p id="invited_talk_2"><span style="font-weight: bold;">Towards ML-driven resource orchestration in disaggregated memory systems: challenges and opportunities</span><br/><span style="font-style: italic;">Dimosthenis Masouros</span> (NTUA, Greece)</p>
 
               <p>The fixed resource capacity of modern Cloud servers poses several challenges regarding the efficient orchestration of computing resources. To alleviate this resource wall challenge, hardware (memory) disaggregation has been proposed as a new design paradigm, where the underlying infrastructure is organized as a pool of heterogeneous resources that can be composed on demand into compute units tailored to workload-specific requirements. However, even though hardware disaggregation offers more fine-grained organization of computing resources, it also introduces new optimization knobs, which have to be properly managed to truly exploit its benefits. ML-driven resource orchestration is a key player in this direction, however, questions like "where", "when" and "how" to use ML for resource orchestration of disaggregated systems are still vague. This talk highlights some of the key research questions and open problems in this area, gives examples of recent research that demonstrate the potential of ML-driven resource orchestration, and provides insights into the exciting new opportunities that ML presents for the future of disaggregated memory systems.</p>
+
+              <hr/>
+
+              <p id="invited_talk_3"><span style="font-weight: bold;">Efficient Resilience Training of Large-Scale Recommendation Models using CXL Persistent Memory Pooling</span><br/><span style="font-style: italic;">Junhyeok Jang</span> (KAIST)</p>
+
+              <p>The ever-increasing demands for high accuracy in deep learning-based recommendation systems require large amounts of memory space, making them resource-intensive. To address this, hyperscalers have scaled up their recommendation models to consume tens of terabytes of memory space, and these models must be trained for long periods without accuracy degradation while being fault-tolerant. In this talk, we present an innovative solution, called TrainingCXL that utilizes CXL 3.0 to efficiently process large-scale recommendation models in disaggregated memory while ensuring training is failure-tolerant with low overhead. By integrating persistent memory (PMEM) and GPU as Type-2 devices in a cache-coherent domain, we enable direct access to PMEM without software intervention. TrainingCXL employs computing and checkpointing logic near the CXL controller to manage persistency actively and efficiently. To ensure fault tolerance, we use the unique characteristics of recommendation models to take checkpointing off the critical path of their training. We also employ an advanced checkpointing technique that relaxes the updating sequence of embeddings across training batches. Our evaluation shows that TrainingCXL achieves significant performance improvements, including a 5.2x speedup and 72.6% energy savings compared to modern PMEM-based recommendation systems.</p>
 
               <p style="margin-bottom: 10em;"></p>
             </div>
