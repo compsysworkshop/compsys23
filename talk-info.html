@@ -52,16 +52,17 @@
               <h4>Keynote</h4>
 
               <hr/>
-
+              
               <p id="keynote_1"><span style="font-weight: bold;">Breaking out of the physical: Composable infrastructure of the software defined server</span><br/><span style="font-style: italic;">Scott Houppermans</span> (Liqid, Inc., USA)</p>
-
+              
+              <div style="font-weight: bold;">Abstract</div>
               <p>The datacenter has evolved through time from individual servers, to virtualized clusters, to converged, and to hyperconverged systems. Liqid brings true composable infrastructure. The next evolution of your datacenter with cloud-like flexibility for your increasing expensive and power-hungry GPUs and other devices that modern applications and workloads rely upon.</p>
 
               <p>Removing these devices from the server and placing them onto the Liqid PCIe fabric, we create the true software-defined bare metal server; endlessly reconfigurable to meet any demand on the fly. Ever flexible to each use case and application, composable infrastructure provides the hardware that is needed, at the time it is needed, for as long as it’s needed to meet the goals of the Enterprise, researcher, or business mission.</p>
 
               <p>Slash your infrastructure Cap-Ex and Op-Ex costs year over year through reducing server footprint, electrical consumption, and cooling by more fully utilizing these devices; delivering on capability and a more sustainable datacenter.</p>
 
-              <p style="font-weight: bold;">Bio</p>
+              <div style="font-weight: bold;">Speaker Bio</div>
 
               <p>Senior Solutions Architect for Liqid’s Federal and Enterprise customers. Bringing over 20 years’ experience from U.S. Marine Corps and U.S. Navy Enterprise Networks Network Operations Center and Systems Engineering support to the across a wide range of capabilities; from Exchange email administration, SAN Storage engineering, NOC Incident Management Service Restoration, and program level engineering for the Marine Corps Logistics System Disconnected Operations.</p>
 
@@ -71,24 +72,33 @@
 
               <p id="invited_talk_1"><span style="font-weight: bold;">Centralized Composable HPC Management with the OpenFabrics Managment Framework</span><br/><span style="font-style: italic;">Michael Aguilar</span> (Sandia National Labs, USA)</p>
 
+              <div style="font-weight: bold;">Abstract</div>
               <p>Traditional HPC systems are provisioned with static fixed quantities of memory, storage, accelerators, and CPU resources to execute requested computation. This is not sufficient for today’s datacenters that are running modern dynamic workloads, resulting in workloads executing on systems that are not optimized for their needs. Workloads may require hardware resources, e.g. GPUs, that are present in the datacenter but not on the server on which the workload is executing. Conversely, compute resources on a given server may be underutilized because they are not required by the workload running on that server. Thus, datacenters often end up overprovisioning hardware resources to attempt enabling any workload to run on any server.</p>
 
               <p>Composable Disaggregated Infrastructure (CDI) enables servers to be dynamically composed out of hardware resources physically disaggregated in the datacenter, and as needed by a given workload. Centralized resource management can potentially mitigate, out-of-memory conditions, IO thrashing, stranding of available resources, such as, CPUs, GPUs, and memories, and provide dynamic network fail-over. Resource Management, using a standardized interface, can enable clients to monitor, compose, and intelligently provision resources, in beneficial ways.</p>
 
               <p>The OpenFabrics Alliance in collaboration with the DMTF, SNIA, and the CXL Consortium, is developing an OpenFabrics Management Framework (OFMF) and a hardware Composability Manager. The OFMF is a open-source Resource Manager is designed for configuring fabric interconnects and managing composable disaggregated resources in dynamic HPC infrastructures using client-friendly abstractions. The goal of the OFMF is to enable interoperability through common interfaces to enable client Managers to efficiently connect workloads with resources in a complex heterogenous ecosystem, without having to worry about the underlying network technology.</p>
-
+              
+              <div style="font-weight: bold;">Speaker Bio</div>
+              Michael is a Senior Computer Scientist for HPC Research and Development at Sandia National Labs.  Michael is the Lead HPC Systems Engineer for the Sandia Labs Astra ARM64 HPC system, part of the DOE/Sandia Labs Vanguard HPC development program.  The Sandia Vanguard program is expands HPC  by evaluating and accelerating the development of emerging technologies in order to increase their viability for future large-scale production platforms.  Also, Michael is working as an HPC Engineer for Sandia Lab’s Capability-Class HPC systems and Testbed systems and performing research and development work on new HPC architectures and HPC IO systems.  Michael is currently serving as Co-Chair of the OpenFabrics Management Framework (OFMF) Working Group.
               <hr/>
 
               <p id="invited_talk_2"><span style="font-weight: bold;">Towards ML-driven resource orchestration in disaggregated memory systems: challenges and opportunities</span><br/><span style="font-style: italic;">Dimosthenis Masouros</span> (NTUA, Greece)</p>
 
+              <div style="font-weight: bold;">Abstract</div>
               <p>The fixed resource capacity of modern Cloud servers poses several challenges regarding the efficient orchestration of computing resources. To alleviate this resource wall challenge, hardware (memory) disaggregation has been proposed as a new design paradigm, where the underlying infrastructure is organized as a pool of heterogeneous resources that can be composed on demand into compute units tailored to workload-specific requirements. However, even though hardware disaggregation offers more fine-grained organization of computing resources, it also introduces new optimization knobs, which have to be properly managed to truly exploit its benefits. ML-driven resource orchestration is a key player in this direction, however, questions like "where", "when" and "how" to use ML for resource orchestration of disaggregated systems are still vague. This talk highlights some of the key research questions and open problems in this area, gives examples of recent research that demonstrate the potential of ML-driven resource orchestration, and provides insights into the exciting new opportunities that ML presents for the future of disaggregated memory systems.</p>
-
+              
+              <div style="font-weight: bold;">Speaker Bio</div>
+              Dimosthenis Masouros received his PhD in electrical and computer engineering from the National Technical University of Athens, Greece in 2023. His main research interests involve the application of Machine Learning and Deep Learning for efficient resource management in Edge/Cloud architectures. He has published more than 20 technical and research papers in international conferences and journals and he has also worked in several European projects, focusing on ML-driven Cloud orchestrators, HW/SW co-design and design space exploration techniques for high-dimensional optimization problems.
               <hr/>
 
               <p id="invited_talk_3"><span style="font-weight: bold;">Efficient Resilience Training of Large-Scale Recommendation Models using CXL Persistent Memory Pooling</span><br/><span style="font-style: italic;">Junhyeok Jang</span> (KAIST, South Korea)</p>
-
+              
+              <div style="font-weight: bold;">Abstract</div>
               <p>The ever-increasing demands for high accuracy in deep learning-based recommendation systems require large amounts of memory space, making them resource-intensive. To address this, hyperscalers have scaled up their recommendation models to consume tens of terabytes of memory space, and these models must be trained for long periods without accuracy degradation while being fault-tolerant. In this talk, we present an innovative solution, called TrainingCXL that utilizes CXL 3.0 to efficiently process large-scale recommendation models in disaggregated memory while ensuring training is failure-tolerant with low overhead. By integrating persistent memory (PMEM) and GPU as Type-2 devices in a cache-coherent domain, we enable direct access to PMEM without software intervention. TrainingCXL employs computing and checkpointing logic near the CXL controller to manage persistency actively and efficiently. To ensure fault tolerance, we use the unique characteristics of recommendation models to take checkpointing off the critical path of their training. We also employ an advanced checkpointing technique that relaxes the updating sequence of embeddings across training batches. Our evaluation shows that TrainingCXL achieves significant performance improvements, including a 5.2x speedup and 72.6% energy savings compared to modern PMEM-based recommendation systems.</p>
 
+              <div style="font-weight: bold;">Speaker Bio</div>
+              Junhyeok Jang is a highly accomplished Ph.D. candidate supervised by Professor Myoungsoo Jung at CAMELab, KAIST. He specializes in the field of hardware and software co-design for large-scale machine learning applications, with a focus on recommendation systems and graph neural networks (GNNs). Jang's extensive research experience in this field has led to numerous breakthroughs, including the development of TrainingCXL, a highly efficient and failure-tolerant system for processing large-scale recommendation models in disaggregated memory pools. He has published multiple research papers and articles on his research findings and has presented his work at various international conferences.
               <p style="margin-bottom: 10em;"></p>
             </div>
           </div>
